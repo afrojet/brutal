@@ -1,6 +1,92 @@
+<!DOCTYPE html>
 <html>
-	<head></head>
-	<body>
-		<h1>Hello Brutal World</h1>
-	</body>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Brutal Typeface</title>
+	<style type="text/css" media="screen">
+
+body {
+	margin: 60px auto;
+	padding: 0;
+	font-family: Helvetica, Arial, Georgia, sans-serif;
+	font-size: 11px;
+}
+
+a {
+	color: #bd3745;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'brutal';
+	src: local('brutal'), local('brutal'), url('brutal.ttf') format('truetype');
+}
+
+#brutOne {
+	position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+	width: 300px;
+}
+	
+#brutTwo {
+	position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+	width: 300px;
+	opacity: 0.5;  /* Modern Browsers, eg: Firefox, Safari, Opera, Chrome */
+   filter: alpha(opacity = 50);  /* IE */
+   -moz-opacity: 0.5;  /* Old Mozilla, eg: Netscape */
+   -khtml-opacity: 0.5;  /* Old Safari */
+   zoom: 1; /* Requires for IE if the element is not positioned relatively */
+}
+	
+#brutOne p {
+	font-family: 'brutal', serif;
+ 	font-size: 42px;
+ 	font-weight: normal;
+ 	line-height: 24px;
+ 	letter-spacing: 6px;
+ 	line-height: 52px;
+ 	margin: 0;
+ 	padding: 0;
+ 	color: #bd3745;
+ 	text-align: left;
+ 	padding-bottom: 50px;
+}
+
+#brutTwo p {
+	font-family: 'brutal', serif;
+ 	font-size: 42px;
+ 	font-weight: normal;
+ 	line-height: 24px;
+ 	letter-spacing: 6px;
+ 	line-height: 52px;
+ 	margin: 0;
+ 	padding: 0;
+ 	color: #009999;
+ 	text-align: left;
+}
+
+#brutOne p.norm {
+	font: Arial, Georgia, sans-serif;
+}
+	</style>
+</head>
+
+<body>
+<div id="brutOne">
+<p>QUICK BROWN FOX JUMPS OVER THE LAZY DOG</p>
+Made with the FontStruct font:
+<br />
+<a href="http://fontstruct.fontshop.com/fontstructions/show/brutal_exchange_of_a_smug_for_some_faith">Brutal Exchange of a Smug for Some Faith</a>.
+</div>
+<div id="brutTwo">
+<p>quick brown fox jumps over the lazy dog</p>
+</div>
+</body>
 </html>
